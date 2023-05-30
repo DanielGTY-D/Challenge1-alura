@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- estilos -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <img class="header__img" src="img/Vector.png" alt="logo alura">
+
+            <h1 class="header__title">Encriptador de Texto</h1>
+        </header>
+
+
+        <div class="d-flex">
+            <section class="main">
+                <div class="main__mensaje">
+                    <textarea class="mensaje" name="" id="entrada" cols="45" rows="10"
+                        placeholder="Ingrese el texto a encriptar o desencriptar" ></textarea>
+
+                    <p><img src="img/alert.png" alt="icono alerta">Solo letras minúsculas y sin acentos</p>
+                </div> <!-- .main__mensaje-->
+
+                <div class="main__buttons">
+                    <input disabled class="button button--izquierdo" id="encriptar" type="button" value="Encriptar">
+                    <input disabled class="button button--derecho" id="desencriptar" type="button" value="Desencriptar">
+                </div> <!-- .main__buttons-->
+                <div id="error">
+
+                </div>
+            </section>
+
+            <aside class="barra-lateral">
+
+                <div id="imagen">
+                    <div class="barra-lateral__img">
+
+                    </div>
+                    <div class="barra-lateral__contenido">
+                        <p class="barra-lateral__alert">Ningún mensaje fue encontrado</p>
+                    </div>
+                </div>
+
+                <div id="contenedor__salida" class="d-none d-flex--lateral">
+                    <textarea class="barra-lateral__input" name="" id="salida" cols="30" rows="10"></textarea>
+                    <input class="btn-copiar" type="button" value="copiar" id="copiar">
+                </div>
+            </aside>
+        </div> <!-- .d-flex-->
+
+    </div> <!-- contenedor-->
+
+    <footer class="footer">
+        <p>Por danny Yaelgarcía torres</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
